@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Registration Form</title>
+   <style>
+      /* ใช้ Flexbox เพื่อจัดฟอร์มให้อยู่ตรงกลาง */
+      body {
+         font-family: Arial, sans-serif;
+         margin: 0;
+         padding: 0;
+         background-size: cover;
+         background-color: #ce93d8;
+
+         display: flex;
+         background-position: center;
+         background-attachment: fixed;
+         justify-content: center;
+         flex-direction: column;
+         align-items: center;
+         height: 100vh;
+         overflow: auto;
+         /* เพิ่มการเลื่อนเมื่อเนื้อหามากเกินขนาด */
+
+
+      }
+
+      /* กล่องฟอร์ม */
+      form {
+         background-color: #fff;
+         padding: 20px;
+         border-radius: 10px;
+         width: 80%;
+         max-width: 600px;
+         border: 2px solid #ccc;
+         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+         overflow-y: auto;
+         /* เพิ่มการเลื่อนในฟอร์ม */
+         max-height: 90vh;
+         /* กำหนดความสูงสูงสุด */
+      }
+
+      h1 {
+         text-align: center;
+         color: #333;
+      }
+
+      h4 {
+         color: #555;
+      }
+
+      label {
+         margin-top: 10px;
+         color: #333;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="file"],
+      select,
+      textarea {
+         width: 100%;
+         padding: 10px;
+         margin: 5px 0 15px 0;
+         border-radius: 5px;
+         border: 1px solid #ccc;
+         font-size: 16px;
+      }
+
+      /* ปรับสีของปุ่ม Submit */
+      input[type="submit"] {
+         background-color: #ab47bc;
+         color: white;
+         border: none;
+         padding: 10px;
+         font-size: 16px;
+         width: 100%;
+         border-radius: 5px;
+         cursor: pointer;
+         transition: background-color 0.3s ease;
+      }
+
+      input[type="submit"]:hover {
+         background-color: #ff6500;
+      }
+
+      /* สไตล์ให้ textarea ดูดีขึ้น */
+      textarea {
+         resize: vertical;
+         min-height: 100px;
+      }
+
+      /* สำหรับการจัดระเบียบ radio และ checkbox */
+      .input-group {
+         margin-bottom: 15px;
+      }
+
+      .input-group input {
+         margin-right: 10px;
+      }
+   </style>
+</head>
+
+<body>
+
+   <form action="https://example.com/" method="get">
+      <h1>ลงทะเบียนศิษย์เก่า IT + IS</h1>
+      <h4>กรุณากรอกข้อมูล</h4>
+
+      <label for="name">ชื่อ:</label>
+      <input type="text" name="ชื่อ" id="name" />
+
+      <label for="surname">สกุล:</label>
+      <input type="text" name="สกุล" id="surname" />
+
+      <label for="student-id">รหัสนักศึกษา:</label>
+      <input type="text" name="รหัสนักศึกษา" id="student-id" />
+
+      <label for="year-of-study">ปีการศึกษาเข้าศึกษา:</label>
+      <select name="year-of-study" id="year-of-study">
+         <option value="2563">2563</option>
+         <option value="2562">2562</option>
+         <option value="2561">2561</option>
+         <option value="2560">2560</option>
+         <option value="2559">2559</option>
+         <option value="2558">2558</option>
+         <option value="2557">2557</option>
+         <option value="2556">2556</option>
+      </select>
+
+      <div class="input-group">
+         <h4>เพศ:</h4>
+         <input type="radio" name="gender" value="ชาย" /> ชาย
+         <input type="radio" name="gender" value="หญิง" /> หญิง
+         <input type="radio" name="gender" value="LGBTQ" /> LGBTQ
+         <input type="radio" name="gender" value="ไม่ต้องการระบุ" /> ไม่ต้องการระบุ
+      </div>
+
+      <label for="address">ที่อยู่ปัจจุบัน:</label>
+      <textarea name="address" id="address" cols="30" rows="3"></textarea>
+
+      <label for="email">อีเมลล์:</label>
+      <input type="text" name="email" id="email" />
+
+      <label for="phone">เบอร์โทรติดต่อ:</label>
+      <input type="text" name="phone" id="phone" />
+
+      <div class="input-group">
+         <h4>ชื่อหลักสูตรที่ศึกษา:</h4>
+         <input type="radio" name="course" value="IT" /> IT (เทคโนโลยีสารสนเทศ)
+         <input type="radio" name="course" value="IS" /> IS (ระบบสารสนเทศ)
+      </div>
+
+      <label for="occupation">อาชีพปัจจุบัน:</label>
+      <input type="text" name="occupation" id="occupation" />
+
+      <h4>สถานที่ทำงาน:</h4>
+
+      <label for="company-name">ชื่อบริษัท:</label>
+      <input type="text" name="company-name" id="company-name" />
+
+      <label for="company-address">ที่อยู่:</label>
+      <textarea name="company-address" id="company-address" cols="30" rows="3"></textarea>
+
+      <h4>ประเภทการทำงาน:</h4>
+
+      <input type="radio" name="work-type" value="Web Developer" /> Web Developer
+      <input type="radio" name="work-type" value="Systems Analysis" /> Systems Analysis
+      <input type="radio" name="work-type" value="Graphic Design" /> Graphic Design
+      <input type="radio" name="work-type" value="Digital Marketing" /> Digital Marketing
+
+      <br>
+      <br>
+      <label for="image-upload">อัพโหลดรูปภาพ:</label>
+      <input type="file" name="image-upload" id="image-upload" />
+
+      <input type="submit" value="ลงทะเบียน" />
+   </form>
+
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chicken Rice Recipe</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+
+    .pla {
+      margin-top: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+      overflow: hidden;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .image-section {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .image-section img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .content-section {
+      flex: 2;
+      padding: 20px;
+      color: #333;
+      width: 100%;
+    }
+
+    .ingredients-method-container {
+      display: flex;
+      align-self: flex-start;
+      width: 100%;
+    }
+
+    .ingredients {
+      width: 100%;
+      padding: 20px;
+      background-color: #fff7e6;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+
+    #วิธีทำข้าวมันไก่ {
+      flex: 1;
+      padding: 20px;
+      background-color: #f0f8ff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-left: 20px;
+    }
+
+    .prep-info {
+      display: flex;
+      align-items: center;
+      margin: 15px 0;
+    }
+
+    .prep-info div {
+      margin-right: 20px;
+    }
+
+    .prep-info div img {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+
+    .description {
+      margin-top: 15px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      color: #ffa500;
+      font-weight: bold;
+    }
+
+    /* Ingredients section */
+    .ingredients h3 {
+      color: #ffa500;
+      margin-bottom: 10px;
+    }
+
+    .ingredients ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    .ingredients li {
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    /* Method section */
+    #วิธีทำข้าวมันไก่ h3 {
+      color: #ffa500;
+      margin-bottom: 10px;
+    }
+
+    #วิธีทำข้าวมันไก่ article {
+      margin-bottom: 20px;
+    }
+
+    #วิธีทำข้าวมันไก่ h4 {
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    #วิธีทำข้าวมันไก่ ul {
+      list-style: circle;
+      padding-left: 20px;
+    }
+
+    #วิธีทำข้าวมันไก่ li {
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    #วิธีทำข้าวมันไก่ a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #ffa500;
+      font-weight: bold;
+    }
+
+    #วิธีทำข้าวมันไก่ a:hover {
+      text-decoration: underline;
+    }
+
+    .content-section {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      color: #333;
+      width: 100%;
+    }
+
+    .nutrition-section {
+      margin-top: 20px;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Image Section -->
+    <div class="image-section">
+      <img
+        src="https://static.thairath.co.th/media/dFQROr7oWzulq5Fa4MvAZOQmFYm5g8AjQ0hEomarKgOcnnBBWaFW3Ti6Wz9daIWqWz0.jpg"
+        alt="Hainanese Chicken Rice">
+    </div>
+
+
+
+    <div class="content-section">
+      <h1>ข้าวมันไก่ - Hainanese Chicken Rice</h1>
+      <p>By - อารีรัตน์ พรหมกุล</p>
+
+      <div class="prep-info">
+        <div><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEpckehAnr35vbFWJR4hKJoXTvJnhCrw9IxOk6l-QdItjyrq_p"
+            alt=""> Cook: 60 Mins</div>
+        <div><img src="https://indigenousreflections.ca/cdn/shop/products/CRD-35_800x.jpg?v=1597345092" alt=""> Easy
+        </div>
+        <div><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzZXSw8xAT5mEwVWbm9jpE4OBO75D6sqXOvg1YmmjXfsTame8PBLeF03Prep2ELboq2g8&usqp=CAU"
+            alt=""> Cuts into 4</div>
+      </div>
+
+      <p class="description">
+        ✨ <span class="highlight">"ข้าวมันไก่"</span>
+        เมนูในตำนานที่ทั้งอร่อยและอิ่มท้อง!
+        ข้าวหอมมันที่ผสานกับน้ำซุปไก่หอมกลิ่นกระเทียมและขิง ทานคู่กับเนื้อไก่นุ่มชุ่มฉ่ำ
+        เสิร์ฟพร้อมน้ำจิ้มรสเด็ด เผ็ด หวาน ครบทุกคำ!
+        เป็นเมนูที่ไม่ได้มีแค่ในร้านอาหารหรูหรา
+        แต่เป็นความอบอุ่นที่ชวนให้นึกถึงมื้ออาหารในครอบครัว และสามารถทานได้ในทุกช่วงเวลา
+        ไม่ว่าจะเป็นอาหารเช้า กลางวัน หรือเย็น ✨
+
+        <!-- ย้าย Ingredients มาไว้ตรงนี้ -->
+      <div class="ingredients">
+        <h3>วัตถุดิบ - ข้าวมันไก่ </h3>
+        <ul>
+          <li>น่องไก่/สะโพกไก่/อกไก่</li>
+          <li>กระเทียม 3 - 4 หัว</li>
+          <li>รากผักชี 6 ราก</li>
+          <li>ขิงแก่หั่นเป็นแผ่นบาง 6 แผ่น</li>
+          <li>พริกไทย 30 เม็ด</li>
+          <li>เกลือ 1 ½ ช้อนโต๊ะ</li>
+          <li>น้ำตาลกรวด ½ ช้อนโต๊ะ</li>
+          <li>ข้าวสารดิบ 2 ถ้วยตวง</li>
+          <li>ซีอิ๊วขาว 3 ช้อนโต๊ะ</li>
+          <li>น้ำมันพืช ½ ช้อนโต๊ะ</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- Method Section -->
+    <section id="วิธีทำข้าวมันไก่">
+      <h3>วิธีทำข้าวมันไก่</h3>
+
+      <article>
+        <h4>STEP 1: ต้มไก่ + น้ำซุปฟัก</h4>
+        <ul>
+          <li>ใส่รากผักชี กระเทียม พริกไทย ขิง น้ำตาลกรวด ซีอิ๊วขาว เกลือ
+            เคี่ยวประมาณ 15 นาที</li>
+          <li>นำไก่ลงไปต้มต่อจนไก่สุก ใช้เวลาประมาณ 30 นาที</li>
+          <li>นำไก่ที่สุกแล้วไปน็อกในน้ำผสมน้ำแข็ง จนไก่เย็น ใช้เวลาประมาณ 5-10
+            นาที</li>
+          <li>แล้วนำไก่ขึ้นพักให้สะเด็ดน้ำ ทาด้วยน้ำมันพืชบาง ๆ ให้ทั่วชิ้นไก่
+            พักไว้</li>
+        </ul>
+      </article>
+
+      <article>
+        <h4>STEP 2: ทำข้าวมันไก่</h4>
+        <ul>
+          <li>หุงข้าวมันไก่ โดยเจียวกระเทียมกับขิงแก่บุบจนหอม ใส่ข้าวสารดิบลงไป
+            ผัดพอเข้ากัน</li>
+          <li>ปรุงรสด้วยเกลือ น้ำมันไก่ที่ช้อนไว้ ผัดอีกรอบแล้วเทใส่หม้อหุงข้าว
+          </li>
+          <li>ใส่น้ำซุปต้มไก่ลงไป หุงจนข้าวสุก</li>
+        </ul>
+      </article>
+
+      <a href="#TOP">กลับไปด้านบน</a>
+    </section>
+
+    
+    </div>
+
+</body>
+
+</html>
