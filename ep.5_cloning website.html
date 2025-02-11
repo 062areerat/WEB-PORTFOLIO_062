@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flower News</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <!-- Navbar -->
+    <nav class="bg-pink-500 text-black py-2 px-10">
+        <div class="flex justify-between items-center">
+            <!-- Logo and Navbar Links Section -->
+            <div class="flex items-center ml-4">
+                <!-- Menu Toggle Button, visible only on small screens -->
+                <button class="block text-xl cursor-pointer font-bold md:hidden">☰</button>
+
+                <!-- Logo, visible on all screen sizes -->
+                <img src="https://cdn-icons-png.flaticon.com/512/1207/1207559.png" class="ml-2 h-10 w-auto" alt="Logo">
+
+                <!-- Navbar Links, visible only on medium (md) screens and above -->
+                <ul class="hidden md:flex gap-5 ml-4">
+                    <li class="mr-4 font-bold text-white">Roses</li>
+                    <li class="mr-4 font-bold text-white">Orchids</li>
+                    <li class="mr-4 font-bold text-white">Tulips</li>
+                    <li class="mr-4 font-bold text-white">Lilies</li>
+                    <li class="font-bold text-white">Sunflowers</li>
+                </ul>
+            </div>
+
+            <!-- Navbar Actions, visible only on medium (md) screens and above -->
+            <div class="hidden md:flex items-center gap-5 font-bold">
+                <span class="text-white">Audio</span>
+                <img src="magnifying-glass (1).png" class="h-6" alt="Magnifier">
+                <button class="bg-white text-black border-none px-3 py-1 rounded-md cursor-pointer">Log In</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scrolling Navbar (Visible on medium screens and above) -->
+    <div class="bg-white border-t py-2 overflow-hidden whitespace-nowrap text-ellipsis text-center hidden md:block">
+        <span class="inline-block mx-2"><a class="text-red-500 font-bold" href="#">Roses:</a></span>
+        <span class="inline-block mx-2"><a href="#">Red Rose</a></span>
+        <span class="inline-block mx-2">|</span>
+        <span class="inline-block mx-2"><a href="#">White Rose</a></span>
+        <span class="inline-block mx-2"></span>
+
+        <span class="inline-block mx-2"><a class="text-red-500 font-bold" href="#">Orchids:</a></span>
+        <span class="inline-block mx-2"><a href="#">Cattleya</a></span>
+        <span class="inline-block mx-2">|</span>
+        <span class="inline-block mx-2"><a href="#">Phalaenopsis</a></span>
+        <span class="inline-block mx-2"></span>
+
+        <span class="inline-block mx-2"><a class="text-red-500 font-bold" href="#">Tulips:</a></span>
+        <span class="inline-block mx-2"><a href="#">Red Tulip</a></span>
+        <span class="inline-block mx-2">|</span>
+        <span class="inline-block mx-2"><a href="#">Yellow Tulip</a></span>
+        <span class="inline-block mx-2">|</span>
+        <span class="inline-block mx-2"><a href="#">Purple Tulip</a></span>
+    </div>
+
+    <!-- News Container -->
+    <div class="max-w-screen-xl mx-auto px-5 py-10">
+
+        <!-- Main News (Big news) -->
+        <div class="bg-white p-4 rounded-lg shadow-md mb-6">
+            <h2 class="font-bold text-xl text-gray-800">The Beauty of Roses: Symbolism and Care Tips</h2>
+            <img src="https://img.freepik.com/premium-photo/beautiful-selection-different-flower-roses-bloom-from-gorgeous-roses-garden-london_979520-14071.jpg"
+                class="w-full h-64 object-cover rounded-lg mt-4" alt="Roses">
+            <p class="text-gray-600 mt-4 text-sm">
+                Roses are one of the most beloved flowers worldwide, known for their beauty and fragrance. They symbolize love and passion, making them perfect for romantic occasions.
+            </p>
+        </div>
+
+        <!-- Secondary News (Arranged in 3 columns on desktop, 2 columns on tablet/mobile) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Orchids -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h2 class="font-bold text-xl text-gray-800">The Mystical Orchids: A Look at Their Unique Beauty</h2>
+                <img src="https://plantorchid.wordpress.com/wp-content/uploads/2017/02/blue-mystique-orchid.jpg"
+                    class="w-full h-48 object-cover rounded-lg mt-4" alt="Orchids">
+                <p class="text-gray-600 mt-4 text-sm">
+                    Orchids are elegant flowers known for their delicate and symmetrical appearance. They come in various colors and patterns, making them a symbol of beauty, strength, and luxury.
+                </p>
+            </div>
+
+            <!-- Tulips -->
+            <div class="bg-white p-4 rounded-lg shadow-md border-2 border-purple-500">
+                <h2 class="font-bold text-xl text-gray-800">Tulips: The Springtime Flower</h2>
+                <img src="https://hips.hearstapps.com/hmg-prod/images/tulip-garden-royalty-free-image-1675975487.jpg"
+                    class="w-full h-48 object-cover rounded-lg mt-4" alt="Tulips">
+                <p class="text-gray-600 mt-4 text-sm">
+                    Tulips bloom in spring and are available in many vibrant colors. They are known for their simple yet elegant shape, making them a favorite for gardens and bouquets.
+                </p>
+            </div>
+
+            <!-- Sunflowers -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <h2 class="font-bold text-xl text-gray-800">Sunflowers: Brightening Your Day</h2>
+                <img src="https://www.southernliving.com/thmb/Ps0iDY3IslnJ7uE1PV-aA1Lba4c=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1409479894-a89d9b7e1b3947c285ad460529336ead.jpg"
+                    class="w-full h-48 object-cover rounded-lg mt-4" alt="Sunflowers">
+                <p class="text-gray-600 mt-4 text-sm">
+                    Sunflowers are known for their large, bright yellow petals and tall stems. They symbolize happiness, positivity, and loyalty, and they are often associated with the sun due to their ability to face towards it.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
